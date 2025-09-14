@@ -2,172 +2,169 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@400;600;700&family=Lato:wght@300;400;600&family=Italianno&display=swap" rel="stylesheet">
 
   <title>Save the Date</title>
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: #f8f5ef;
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(135deg, #F5E6D3 0%, #F4C2C2 100%);
       padding: 16px;
       display: flex;
       justify-content: center;
+      min-height: 100vh;
     }
 
     .card {
-      background: #d2b48c; /* marrom claro */
-      border-radius: 12px;
+      background: linear-gradient(145deg, #FFF8F0 0%, #F5E6D3 50%, #F4C2C2 100%);
+      border-radius: 25px;
       width: 600px;
       height: 500px;
       padding: 50px 30px;
       text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15), 0 0 0 2px #D4AF37, 0 0 0 4px #F4C2C2;
       position: relative;
       overflow: hidden;
+      border: 3px solid #D4AF37;
     }
-
-    /* Moldura */
-    .emoji-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 4px;
-      font-size: 12px; /* menor */
-    }
-    .top {
+    
+    .card::after {
+      content: '';
       position: absolute;
-      top: 0.4rem;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      border: 1px solid #D4AF37;
+      border-radius: 20px;
+      pointer-events: none;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
       left: 0;
       right: 0;
-    }
-    .bottom {
-      position: absolute;
-      bottom: 0.4rem;
-      left: 0;
-      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="%23D4AF37" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>');
+      pointer-events: none;
     }
 
-    .emoji-column {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      line-height: 1.5;
-      gap: 20px;
-      font-size: 12px; /* menor */
-    }
-    .left {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0.1rem;
-    }
-    .right {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0.1rem;
-    }
 
     h1 {
-      font-family: 'Great Vibes', cursive; /* Save the Date + nomes */
-      font-size: 3em;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2em;
       margin: 0;
+      color: #4A4A4A;
+      text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
     }
     h2 {
-      font-family: 'Great Vibes', cursive; /* Save the Date + nomes */
-      margin: 10px 0;
-      font-weight: normal;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5em;
+      margin: 5px 0;
+      font-weight: 600;
+      color: #4A4A4A;
+      text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
     }
     .highlight {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin: 20px 0;
+      font-family: 'Italianno', cursive;
+      font-size: 2em;
+      font-weight: normal;
+      margin: 10px 0;
+      color: #D4AF37;
+      text-shadow: 1px 1px 2px rgba(74, 74, 74, 0.2);
+      position: relative;
+      z-index: 1;
     }
     .details {
-      margin: 20px 0;
+      margin: 10px 0;
       line-height: 1.6;
+      color: #4A4A4A;
+      font-size: 1em;
+      position: relative;
+      z-index: 1;
     }
     .details a {
-      color: #b22222;
-      font-weight: bold;
+      color: #D4AF37;
+      font-weight: 600;
       text-decoration: none;
+      border-bottom: 1px solid #D4AF37;
     }
     .details a:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: #B8E6B8;
+      border-bottom-color: #B8E6B8;
     }
     .stamp {
       margin-top: 20px;
       display: inline-block;
-      padding: 12px 24px;
-      border: 2px solid #000;
-      border-radius: 50%;
-      font-weight: bold;
-      transform: rotate(-5deg);
-      color: #000;
+      padding: 15px 30px;
+      border: 2px solid #D4AF37;
+      border-radius: 50px;
+      font-weight: 600;
+      font-family: 'Lato', sans-serif;
+      transform: rotate(-2deg);
+      color: #4A4A4A;
       text-decoration: none;
-      background: #f9f9f9;
-      transition: 0.3s;
+      background: linear-gradient(145deg, #FFF8F0, #F5E6D3);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
     }
     .stamp:hover {
-      background: #ffe5e5;
-      border-color: #b22222;
-      color: #b22222;
+      background: linear-gradient(145deg, #D4AF37, #F4C2C2);
+      border-color: #4A4A4A;
+      color: #FFF8F0;
+      transform: rotate(-2deg) scale(1.05);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
     }
     
     .content-wrapper {
       display: flex;
-      align-items: flex-start;
-      gap: 30px;
-      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 10px;
+    }
+    
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      width: 100%;
+      height: 200px;
     }
     
     .text-content {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     
     .couple-image {
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      border: 3px solid #f8f5ef;
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3), 0 0 0 4px #D4AF37, 0 0 0 6px #F4C2C2;
+      border: 3px solid #FFF8F0;
       object-fit: cover;
       flex-shrink: 0;
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <!-- Topo -->
-    <div class="emoji-row top">
-      🎯 ⚡ 🦇 🍺 💀 📚 🦁 ⚔️ ❄️ 🤾 💯 🦅 🍹 🏋️ 🧊 ⭐ 💚 📊 🛡️ 🌊 🥤 🏰 🥃 🔥 🤸 🐍 💦 🪄 🚀 🏹 🦉 
-      
-
-    </div>
-
-    <!-- Base -->
-    <div class="emoji-row bottom">
-      🖤 🔥 ⏱️ 💪 🎉 🍖 💎 🎯 ⚡ 🦇 🍺 💀 📚 🦁 ⚔️ ❄️ 🤾 💯 🦅 🍹 🏋️ 🧊 ⭐ 💚 📊 🛡️ 🌊 🥤 🏰 🥃 🔥 
-
-    </div>
-
-    <!-- Esquerda -->
-    <div class="emoji-column left">
-      ⏱️<br> 🏹<br>💪<br>🎉<br>🍺<br>🦁<br>💯<br>🧊<br>💚<br>📊<br>🏰<br>💦<br>🦉<br>🍖<br>
-      ⚡<br>💀<br>⚔️<br>🦅<br>⭐<br>🛡️<br>🥃<br>🪄<br>🏋️<br>🍺<br>🦁<br>💯<br>🧊<br>🤾<br>📊<br>
-      <br>📚<br>❄️<br>🦇
-    </div>
-
-    <!-- Direita -->
-    <div class="emoji-column right">
-      🍺<br>🦁<br>💯<br>🧊<br>🤾<br>📊<br>🏰<br>💦<br>🦉<br>🍖<br>⚡<br>💀<br>⚔️<br>🦅<br>⭐<br>🛡️<br>
-      🪄<br>🖤<br>🤸<br>💎<br>🦇<br>📚<br>❄️<br>⏱️<br> 🏹<br>💪<br>🎉<br>🍺<br>🦁<br>💯<br>🧊<br>
-      💚<br>🏰<br> 
-    
-    </div>
 
     <!-- Conteúdo -->
     <h1>Save the Date</h1>
@@ -182,9 +179,8 @@
         <a href="https://wa.me/5511934002606" target="_blank" class="stamp">CONFIRME WOD!</a>
       </div>
       
-      <div class="content-wrapper"> 
+      <div class="image-wrapper"> 
         <img src="teste1.png" alt="Jessica & Wagner" class="couple-image">
-
       </div>
     </div>
     <div class="details">
