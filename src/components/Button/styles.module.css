@@ -1,0 +1,50 @@
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.mainContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 600px;
+}
+
+.description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--gray-200);
+}
+
+.footer {
+    width: 100%;
+    padding-top: 2rem;
+    margin-top: auto;
+    color: var(--gray-400);
+    font-size: 0.875rem;
+}
+.button {
+    background-color: var(--white);
+    color: var(--red-500);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.button:hover {
+    background-color: var(--red-100);
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <title>Save the Date</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f8f5ef;
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      background: #d2b48c; /* marrom claro */
+      border-radius: 12px;
+      width: 600px;
+      height: 500px;
+      padding: 50px 30px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Moldura */
+    .emoji-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      font-size: 12px; /* menor */
+    }
+    .top {
+      position: absolute;
+      top: 0.4rem;
+      left: 0;
+      right: 0;
+    }
+    .bottom {
+      position: absolute;
+      bottom: 0.4rem;
+      left: 0;
+      right: 0;
+    }
+
+    .emoji-column {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      line-height: 1.5;
+      gap: 20px;
+      font-size: 12px; /* menor */
+    }
+    .left {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0.1rem;
+    }
+    .right {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0.1rem;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive; /* Save the Date + nomes */
+      font-size: 3em;
+      margin: 0;
+    }
+    h2 {
+      font-family: 'Great Vibes', cursive; /* Save the Date + nomes */
+      margin: 10px 0;
+      font-weight: normal;
+    }
+    .highlight {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .details {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+    .details a {
+      color: #b22222;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .details a:hover {
+      text-decoration: underline;
+    }
+    .stamp {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 24px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      font-weight: bold;
+      transform: rotate(-5deg);
+      color: #000;
+      text-decoration: none;
+      background: #f9f9f9;
+      transition: 0.3s;
+    }
+    .stamp:hover {
+      background: #ffe5e5;
+      border-color: #b22222;
+      color: #b22222;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    
+    .text-content {
+      flex: 1;
+    }
+    
+    .couple-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 3px solid #f8f5ef;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Topo -->
+    <div class="emoji-row top">
+      🎯 ⚡ 🦇 🍺 💀 📚 🦁 ⚔️ ❄️ 🤾 💯 🦅 🍹 🏋️ 🧊 ⭐ 💚 📊 🛡️ 🌊 🥤 🏰 🥃 🔥 🤸 🐍 💦 🪄 🚀 🏹 🦉 
+      
+
+    </div>
+
+    <!-- Base -->
+    <div class="emoji-row bottom">
+      🖤 🔥 ⏱️ 💪 🎉 🍖 💎 🎯 ⚡ 🦇 🍺 💀 📚 🦁 ⚔️ ❄️ 🤾 💯 🦅 🍹 🏋️ 🧊 ⭐ 💚 📊 🛡️ 🌊 🥤 🏰 🥃 🔥 
+
+    </div>
+
+    <!-- Esquerda -->
+    <div class="emoji-column left">
+      ⏱️<br> 🏹<br>💪<br>🎉<br>🍺<br>🦁<br>💯<br>🧊<br>💚<br>📊<br>🏰<br>💦<br>🦉<br>🍖<br>
+      ⚡<br>💀<br>⚔️<br>🦅<br>⭐<br>🛡️<br>🥃<br>🪄<br>🏋️<br>🍺<br>🦁<br>💯<br>🧊<br>🤾<br>📊<br>
+      <br>📚<br>❄️<br>🦇
+    </div>
+
+    <!-- Direita -->
+    <div class="emoji-column right">
+      🍺<br>🦁<br>💯<br>🧊<br>🤾<br>📊<br>🏰<br>💦<br>🦉<br>🍖<br>⚡<br>💀<br>⚔️<br>🦅<br>⭐<br>🛡️<br>
+      🪄<br>🖤<br>🤸<br>💎<br>🦇<br>📚<br>❄️<br>⏱️<br> 🏹<br>💪<br>🎉<br>🍺<br>🦁<br>💯<br>🧊<br>
+      💚<br>🏰<br> 
+    
+    </div>
+
+    <!-- Conteúdo -->
+    <h1>Save the Date</h1>
+    
+    <div class="content-wrapper">
+      <div class="text-content">
+        <h2>Jessica & Wagner</h2>
+        <div class="highlight">ALMOÇO<br>PÓS-CARTÓRIO!</div>
+
+
+        <!-- Botão WhatsApp -->
+        <a href="https://wa.me/5511934002606" target="_blank" class="stamp">CONFIRME WOD!</a>
+      </div>
+      
+      <div class="content-wrapper"> 
+        <img src="teste1.png" alt="Jessica & Wagner" class="couple-image">
+
+      </div>
+    </div>
+    <div class="details">
+      Preparem o apetite e o coração  <br><br> 
+      e venha celebrar a nossa união com muita alegria!<br><br>
+      <strong>20 de Dezembro de 2025</strong><br><br>
+      <strong>Onde?</strong> 
+      <a href="https://maps.google.com" target="_blank">
+        [Nome do Local / Chácara do Jura]
+      </a><br>
+      Confirme sua presença ate dia 13/12/2025!
+    </div>
+  </div>
+</body>
+</html>

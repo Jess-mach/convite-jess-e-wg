@@ -67,3 +67,6 @@ export default tseslint.config([
   },
 ])
 ```
+
+
+ESBUILD_BINARY_PATH=/tmp/esbuild node node_modules/vite/bin/vite.js
