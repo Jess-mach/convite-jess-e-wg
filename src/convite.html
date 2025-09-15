@@ -7,7 +7,7 @@
   <title>Save the Date</title>
   <style>
     body {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Playfair Display', sans-serif;
       background: linear-gradient(135deg, #F5E6D3 0%, #F4C2C2 100%);
       padding: 16px;
       display: flex;
@@ -54,18 +54,18 @@
 
     h1 {
       font-family: 'Dancing Script', serif;
-      font-size: 9em;
+      font-size: 7em;
       margin: 0 0 10px 0;
-      color: #4A4A4A;
+      color: #D4AF37;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
     }
     h2 {
-      font-family: 'Alex Brush', serif;
-      font-size: 3em;
-      margin: 10px 0 -15px;
-      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin: 10px ;
+      font-weight: 300;
       color: #D4AF37;
       text-shadow: 1px 1px 2px rgba(74, 74, 74, 0.3);
       position: relative;
@@ -73,9 +73,9 @@
     }
     h3 {
       font-family: 'Italianno', serif;
-      font-size: 7em;
+      font-size: 9em;
       margin: 10px 0;
-      font-weight: 600;
+      font-weight: 500;
       color: #4A4A4A;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
@@ -85,7 +85,7 @@
       font-family: 'Playfair Display',  Georgia, serif;
       font-size: 3em;
       font-weight: normal;
-      margin: 10px 0;
+      margin: 80px 0 10px 0;
       color: #D4AF37;
       text-shadow: 1px 1px 2px rgba(74, 74, 74, 0.2);
       position: relative;
@@ -93,7 +93,7 @@
     }
     
     .date-time {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Playfair Display', sans-serif;
       font-size: 1.8em;
       font-weight: 600;
       margin: 10px 0;
@@ -102,9 +102,20 @@
       position: relative;
       z-index: 1;
     }
+    
+    .date-time a {
+      color: #D4AF37;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .date-time a:hover {
+      color: #B8860B;
+      text-decoration: underline;
+    }
     .details {
-      margin: 10px 0;
-      line-height: 1.6;
+      margin: 250px 0 20px 0;
+      line-height: 1.8;
       color: #4A4A4A;
       font-size: 2em;
       position: relative;
@@ -122,15 +133,16 @@
       border-bottom-color: #B8E6B8;
     }
     .stamp {
-      margin-top: 20px;
+      margin-top: 40px;
       display: inline-block;
       padding: 15px 30px;
       border: 2px solid #D4AF37;
       border-radius: 50px;
-      font-weight: 600;
-      font-family: 'Lato', sans-serif;
-      transform: rotate(-2deg);
-      color: #4A4A4A;
+      font-weight: 900;
+      font-family: 'Playfair Display', sans-serif;
+      font-size: 1.2em;
+      transform: rotate(-0,5deg);
+      color: #D4AF37;
       text-decoration: none;
       background: linear-gradient(145deg, #FFF8F0, #F5E6D3);
       transition: all 0.3s ease;
@@ -146,19 +158,40 @@
       box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
     }
     
+    .stamp:focus {
+      outline: none;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+    
+    .stamp:active {
+      transform: rotate(-2deg) scale(0.98);
+    }
+    
     
     .couple-image {
-      width: 900px;           
-      height: 1000px;            
+      width: 800px;           
+      height: 750px;            
       border-radius: 25px;
-      object-fit: contain;  
+      object-fit: cover;  
       object-position: center;
       flex-shrink: 0;
       position: relative;
       z-index: 1;
-      margin: 1px auto 1px auto;
+      margin: 50px auto 1px auto;
       display: block;
       background: transparent;
+    }
+
+    .invitation-message {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+      font-weight: 400;
+      margin: 30px 0;
+      color: #4A4A4A;
+      text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
+      line-height: 1.4;
     }                      
 
   </style>
@@ -170,24 +203,30 @@
     <h1>Save the Date</h1>
     <h2>20 de Dezembro</h2>
     
-    <img src="jessw.png" alt="Jessica & Wagner" class="couple-image">
+    <img src="jessw.png" alt="Jéssica & Wagner" class="couple-image">
     
     <h3>Jessica & Wagner</h3>
+    
+    <div class="invitation-message">
+      Preparem o apetite e o coração,<br>
+      venha celebrar a nossa união com muita alegria!
+    </div>
+    
     <div class="highlight">Almoço Pós-Cartório!</div>
     <div class="date-time">Dia 20/12/2025 às 12:30</div>
+    <div class="date-time">
+      <strong>Local:</strong> 
+      <a href="https://maps.google.com" target="_blank">
+        Chácara do Jura
+      </a>
+    </div>
+    
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511934002606" target="_blank" class="stamp">EU CONFIRMO! ❤️</a>
     
     <div class="details">
-      Preparem o apetite e o coração<br>
-      e venha celebrar a nossa união com muita alegria!<br><br>
-      <strong>Onde?</strong> 
-      <a href="https://maps.google.com" target="_blank">
-        [Nome do Local / Chácara do Jura]
-      </a><br>
-      Confirme sua presença ate dia 13/12/2025!
+      Confirme sua presença ate dia 01/12/2025!
     </div>
-
-    <!-- Botão WhatsApp -->
-    <a href="https://wa.me/5511934002606" target="_blank" class="stamp">CONFIRME WOD!</a>
   </div>
 </body>
 </html>
