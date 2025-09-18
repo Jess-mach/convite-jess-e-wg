@@ -113,6 +113,11 @@
       color: #B8860B;
       text-decoration: underline;
     }
+    .note-line {
+      font-weight: 400;
+      color: #D4AF37;
+      margin-bottom: 20px;
+    }
     .details {
       margin: 0px 0 20px 0;
       line-height: 1.8;
@@ -145,18 +150,18 @@
       transform: rotate(-0,5deg);
       color: #D4AF37;
       text-decoration: none;
-      background: linear-gradient(145deg, #FFF8F0, #F5E6D3);
+      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
     }
     .stamp:hover {
-      background: linear-gradient(145deg, #D4AF37, #F4C2C2);
-      border-color: #4A4A4A;
-      color: #FFF8F0;
-      transform: rotate(-2deg) scale(1.05);
-      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
+      border-color: #D4AF37;
+      color: #4A4A4A;
+      transform: rotate(-0,5deg) scale(1.05);
+      box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4);
     }
     
     .stamp:focus {
@@ -166,6 +171,42 @@
     
     .stamp:active {
       transform: rotate(-2deg) scale(0.98);
+    }
+    
+    .gift-list-link {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #D4AF37;
+      border-radius: 50px;
+      font-weight: 900;
+      font-family: 'Playfair Display', sans-serif;
+      font-size: 1.2em;
+      transform: rotate(-0,5deg);
+      color: #D4AF37;
+      text-decoration: none;
+      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .gift-list-link:hover {
+      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
+      border-color: #D4AF37;
+      color: #4A4A4A;
+      transform: rotate(-0,5deg) scale(1.05);
+      box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4);
+    }
+    
+    .gift-list-link:focus {
+      outline: none;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+    
+    .gift-list-link:active {
+      transform: rotate(-0,5deg) scale(0.98);
     }
     
     
@@ -215,19 +256,26 @@
     
     <div class="highlight">Almoço Pós-Cartório!</div>
     <div class="date-time">Dia 20/12/2025 às 12:30</div>
+    <div class="date-time note-line">Open cooler</div>
     <div class="date-time">
       <strong>Local:</strong> 
-      <a href="https://maps.google.com" target="_blank">
+      <a href="https://www.google.com/maps/place/Ch%C3%A1cara+Do+Jura/@-22.6184394,-50.4573451,20.7z/data=!4m6!3m5!1s0x94953c71fc56fbb7:0xe8110b997ea7bce7!8m2!3d-22.6183774!4d-50.4571342!16s%2Fg%2F11hj9nsjhf?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" 
+      target="_blank">
         Chácara do Jura
       </a>
     </div>
     
     <!-- Botão WhatsApp -->
-    <a href="https://wa.me/5511934002606" target="_blank" class="stamp">EU CONFIRMO! ❤️</a>
+    <a href="https://wa.me/5511000000000?text=Olá!%0A%0A%20Confirmo%20minha%20presen%C3%A7a%20no%20almo%C3%A7o%20p%C3%B3s-cart%C3%B3rio%20da%20Jessica%20e%20Wagner%20no%20dia%2020/12/2025!" 
+    target="_blank" 
+    class="stamp">EU CONFIRMO! ❤️</a>
     
     <div class="details">
       Confirme sua presença ate dia 01/12/2025!
     </div>
+    
+    <!-- Link Lista de Presentes -->
+    <a href="lista-presentes.html" target="_blank" class="gift-list-link">🎁 Lista de Presentes</a>
   </div>
 </body>
 </html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@400;600;700&family=Lato:wght@300;400;600&family=Italianno&display=swap" rel="stylesheet">
+  <title>Lista de Presentes - Jessica & Wagner</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', sans-serif;
+      background: linear-gradient(135deg, #F5E6D3 0%, #F4C2C2 100%);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: linear-gradient(145deg, #FFF8F0 0%, #F5E6D3 50%, #F4C2C2 100%);
+      border-radius: 25px;
+      width: 800px;
+      max-width: 90%;
+      padding: 50px 30px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15), 0 0 0 2px #D4AF37, 0 0 0 4px #F4C2C2;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #D4AF37;
+      margin: 20px 0;
+    }
+    
+    .container::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      border: 1px solid #D4AF37;
+      border-radius: 20px;
+      pointer-events: none;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', serif;
+      font-size: 3em;
+      font-weight: 200;
+      margin: 0 0 20px 0;
+      color: #D4AF37;
+      text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      font-family: 'Italianno', serif;
+      font-size: 7em;
+      font-weight: 200;
+      margin: 30px 0 20px 0;
+      color: #4A4A4A;
+      text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      font-weight: 90;
+      margin: 20px 0 40px 0;
+      color: #4A4A4A;
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+    }
+
+    h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1,5em;
+      font-weight: 200;
+      margin: 30px 0 20px 0;
+      color: #D4AF37;
+      text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .subtitle {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3em;
+      margin: 20px 0 40px 0;
+      color: #4A4A4A;
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+    }
+
+    .gift-section {
+      margin: 40px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .gift-item {
+      background: rgba(255, 248, 240, 0.8);
+      border: 2px solid #D4AF37;
+      border-radius: 15px;
+      padding: 12px 15px;
+      margin: 10px 0;
+      text-align: left;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    }
+
+    .gift-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+      background: rgba(255, 248, 240, 0.95);
+    }
+
+    .gift-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #4A4A4A;
+      margin-bottom: 5px;
+    }
+
+    .gift-description {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .gift-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1em;
+      font-weight: 600;
+      color: #D4AF37;
+    }
+
+    .pix-section {
+      background: linear-gradient(145deg, #D4AF37, #F4C2C2);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 40px 0;
+      color: #FFF8F0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pix-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .pix-description {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .pix-key {
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      padding: 15px;
+      font-family: 'Lato', monospace;
+      font-size: 1.1em;
+      word-break: break-all;
+      margin: 15px 0;
+    }
+
+    .copy-button {
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 25px;
+      padding: 10px 20px;
+      color: #FFF8F0;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .copy-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 12px 25px;
+      border: 2px solid #D4AF37;
+      border-radius: 30px;
+      font-weight: 600;
+      font-family: 'Playfair Display', sans-serif;
+      font-size: 1.1em;
+      color: #4A4A4A;
+      text-decoration: none;
+      background: linear-gradient(145deg, #F5E6D3, #F4C2C2);
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 12px rgba(212, 175, 55, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .back-link:hover {
+      background: linear-gradient(145deg, #D4AF37, #F4C2C2);
+      border-color: #4A4A4A;
+      color: #FFF8F0;
+      transform: scale(1.02);
+      box-shadow: 0 5px 18px rgba(212, 175, 55, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Presentes</h1>
+    <h2>Jessica & Wagner</h2>
+    <h3>
+        "Obrigado por fazerem parte deste momento único em nossas vidas!"
+    </h3>
+
+    <div class="gift-section">
+      <h4>Presentes Físicos</h4>
+      
+      <div class="gift-item">
+        <div class="gift-name">Jogo de Pratos</div>
+        <div class="gift-description">Jogo completo de pratos para 12 pessoas, ideal para receber família e amigos</div>
+        <div class="gift-price">R$ 150,00 - R$ 500,00</div>
+      </div>
+
+      <div class="gift-item">
+        <div class="gift-name">Jogo de Copos</div>
+        <div class="gift-description">Conjunto de copos de vidro para água e suco</div>
+        <div class="gift-price">R$ 80,00 - R$ 150,00</div>
+      </div>
+
+      <div class="gift-item">
+        <div class="gift-name">Panela de Pressão</div>
+        <div class="gift-description">Panela de pressão 5 litros, essencial para o dia a dia</div>
+        <div class="gift-price">R$ 120,00 - R$ 200,00</div>
+      </div>
+
+      <div class="gift-item">
+        <div class="gift-name">Jogo de Toalhas</div>
+        <div class="gift-description">Conjunto de toalhas de banho e rosto</div>
+        <div class="gift-price">R$ 100,00 - R$ 180,00</div>
+      </div>
+
+      <div class="gift-item">
+        <div class="gift-name">Golden</div>
+        <div class="gift-description">Mais um pet para alegrar a casa</div>
+        <div class="gift-price">R$ 2000,00 - R$ 3500,00</div>
+      </div>
+
+      <div class="gift-item">
+        <div class="gift-name">Jogo de Lençóis</div>
+        <div class="gift-description">Conjunto de lençóis de casal com fronha</div>
+        <div class="gift-price">R$ 150,00 - R$ 300,00</div>
+      </div>
+    </div>
+
+    <div class="pix-section">
+      <div class="pix-title">💳 Contribuição via PIX</div>
+      <div class="pix-description">
+        Se preferir contribuir com uma quantia em dinheiro, será muito bem-vinda! 
+        Nos ajudará com as despesas da festa e a montar nosso lar.
+      </div>
+      <div class="pix-key">
+        <strong>Chave PIX:</strong><br>
+        jessica.wagner@email.com
+      </div>
+      <button class="copy-button" onclick="copyPixKey()">📋 Copiar Chave PIX</button>
+    </div>
+
+    <a href="convite.html" class="back-link">← Voltar ao Convite</a>
+  </div>
+
+  <script>
+    function copyPixKey() {
+      const pixKey = 'jessica.wagner@email.com';
+      navigator.clipboard.writeText(pixKey).then(function() {
+        alert('Chave PIX copiada para a área de transferência!');
+      }, function(err) {
+        console.error('Erro ao copiar: ', err);
+        // Fallback para navegadores mais antigos
+        const textArea = document.createElement('textarea');
+        textArea.value = pixKey;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('Chave PIX copiada para a área de transferência!');
+      });
+    }
+  </script>
+</body>
+</html>
