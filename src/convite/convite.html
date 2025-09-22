@@ -266,7 +266,9 @@
     </div>
     
     <!-- Botão WhatsApp -->
-    <a id="whatsapp-confirm-link" href="#" target="_blank" class="stamp">EU CONFIRMO! ❤️</a>
+  <a href="https://wa.me/55${NUMERO_WHATTS}?text=Olá!%0A%0A%20Confirmo%20minha%20presen%C3%A7a%20no%20almo%C3%A7o%20p%C3%B3s-cart%C3%B3rio%20da%20Jessica%20e%20Wagner%20no%20dia%2020/12/2025!" 
+    target="_blank" 
+    class="stamp">EU CONFIRMO! ❤️</a>
     
     <div class="details">
       Confirme sua presença ate dia 01/12/2025!
@@ -275,22 +277,5 @@
     <!-- Link Lista de Presentes -->
     <a href="lista-presentes.html" target="_blank" class="gift-list-link">🎁 Lista de Presentes</a>
   </div>
-
-  <script>
-    // Use esta variável para definir o número do WhatsApp
-    // const NUMERO_WHATTS = '5511000000000'; // <-- Substitua pelo número de WhatsApp correto com código do país
-
-    // Seleciona o link de confirmação do WhatsApp
-    const whatsAppLink = document.getElementById('whatsapp-confirm-link');
-
-    // Monta a URL do WhatsApp com a mensagem
-    const textoMensagem = 'Olá!\n\nConfirmo minha presença no almoço pós-cartório da Jessica e Wagner no dia 20/12/2025!';
-    const whatsappUrl = `https://wa.me/55${NUMERO_WHATTS}?text=${encodeURIComponent(textoMensagem)}`;
-
-    // Define o atributo href do link
-    if (whatsAppLink) {
-      whatsAppLink.href = whatsappUrl;
-    }
-  </script>
 </body>
 </html>
