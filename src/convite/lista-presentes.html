@@ -18,7 +18,8 @@
     .container {
       background: linear-gradient(145deg, #FFF8F0 0%, #F5E6D3 50%, #F4C2C2 100%);
       border-radius: 25px;
-      width: 800px;
+      width: 980px;
+      height: 1980px;;
       max-width: 90%;
       padding: 50px 30px;
       text-align: center;
@@ -143,8 +144,8 @@
     .pix-section {
       background: linear-gradient(145deg, #D4AF37, #F4C2C2);
       border-radius: 20px;
-      padding: 30px;
-      margin: 40px 0;
+      padding: 120px;
+      margin: 100px 0;
       color: #FFF8F0;
       position: relative;
       z-index: 1;
@@ -193,7 +194,6 @@
     }
 
     .back-link {
-      margin-top: 40px;
       display: inline-block;
       padding: 12px 25px;
       border: 2px solid #D4AF37;
@@ -216,6 +216,14 @@
       color: #FFF8F0;
       transform: scale(1.02);
       box-shadow: 0 5px 18px rgba(212, 175, 55, 0.3);
+    }
+
+    .back-link-container {
+      position: absolute;
+      bottom: 50px;
+      left: 30px;
+      right: 30px;
+      text-align: center;
     }
   </style>
 </head>
@@ -280,7 +288,9 @@
       <button class="copy-button" onclick="copyPixKey()">📋 Copiar Chave PIX</button>
     </div>
 
-    <a href="convite.html" class="back-link">← Voltar ao Convite</a>
+    <div class="back-link-container">
+      <a href="convite.html" class="back-link">← Voltar ao Convite</a>
+    </div>
   </div>
 
   <script>
