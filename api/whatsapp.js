@@ -9,7 +9,9 @@ module.exports = (req, res) => {
       return;
     }
 
-    const message = 'Olá!\n\nConfirmo minha presença no almoço pós-cartório da Jessica e Wagner no dia 20/12/2025!';
+    const defaultMessage = 'Olá!\n\nConfirmo minha presença no almoço pós-cartório da Jessica e Wagner no dia 20/12/2025!';
+    const customText = (req.query && req.query.text) ? String(req.query.text) : '';
+    const message = customText.trim() ? customText : defaultMessage;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     res.statusCode = 302;
