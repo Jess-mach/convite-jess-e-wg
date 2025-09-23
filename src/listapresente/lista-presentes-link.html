@@ -25,7 +25,7 @@
       box-shadow: 0 15px 35px rgba(0,0,0,0.15), 0 0 0 2px #A17A4D, 0 0 0 4px #F4C2C2;
       position: relative;
       overflow: hidden;
-      border: 3px solid #A17A4D;
+      border: 3px solid #B58B4C;
       margin: 20px 0;
     }
 
@@ -46,7 +46,7 @@
       font-size: 3em;
       font-weight: 200;
       margin: 0 0 10px 0;
-      color: #D4AF37;
+      color: #A17A4D;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
@@ -57,39 +57,15 @@
       font-size: 7em;
       font-weight: 200;
       margin: 10px 0 30px 0;
-      color: #8b7303;
+      color: #A17A4D;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
     }
 
-    .main-link {
-      display: block;      
-      padding: 22px 32px;
-      border: 4px solid #A17A4D;
-      border-radius: 55px;
-      font-weight: 1000;
-      font-family: 'Playfair Display', sans-serif;
-      font-size: 1.9em;
-      color: #A17A4D;
-      text-decoration: none;
-      background: #E0C1A2;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-      margin: 80px auto 0 auto;
-    }
-
-    .main-link:hover {
-      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
-      border-color: #A17A4D;
-      color: #4A4A4A;
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4);
-    }
-
     .image-wrapper {
       text-align: center;
-      margin-top: -190px;
+      margin-top: -300px;
     }
 
     .gift-image {
@@ -100,21 +76,46 @@
       margin: 0 auto;
     }
 
+    .main-link {
+      display: block;      
+      padding: 22px 32px;
+      border: 4px solid #B58B4C;
+      border-radius: 55px;
+      font-weight: 1000;
+      font-family: 'Playfair Display', sans-serif;
+      font-size: 1.9em;
+      color: #705537;
+      text-decoration: none;
+      background: #E0C1A2;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+      margin: -100px  0 auto;
+    }
+
+    .main-link:hover {
+      background: #705537;
+      border-color: #F4EAD5;
+      color: #FFF8F0;
+      transform: scale(1.02);
+      box-shadow: 0 5px 18px rgba(212, 175, 55, 0.3);
+      /* box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4); */
+    }
+
     .message-wrapper {
-      margin-top: -200px;
+      margin-top: 100px;
       margin-left: auto;
       margin-right: auto;
       width: 95%;
       max-width: 900px;
       text-align: center;
-      color: #A17A4D;
+      color: #705537;
     }
 
     .message-title {
       font-family: 'Playfair Display', serif;
       font-size: 1.8em;
       font-weight: 700;
-      color: #D4AF37;
+      color: #705537;
       margin: 8px 0 10px 0;
     }
 
@@ -122,12 +123,12 @@
       width: 100%;
       box-sizing: border-box;
       background: #faede2; /* um tom mais claro que a imagem */
-      border: 2px solid #A17A4D;
+      border: 4px solid #B58B4C;
       border-radius: 40px; /* arredondada */
-      padding: 24px 18px;
+      padding: 60px 20px;
       font-family: 'Playfair Display', sans-serif;
       font-size: 2.2em;
-      color: #A17A4D; /* dourado */
+      color: #705537; /* dourado */
       outline: none;
       resize: vertical;
       min-height: 140px;
@@ -136,18 +137,18 @@
 
     .message-box::placeholder {
       text-align: center;
-      color: #D4AF37; /* centraliza o placeholder */
+      color: #705537; /* centraliza o placeholder */
     }
 
     .send-button {
       margin-top: 12px;
-      padding: 20px 150px; /* igual ao voltar */
-      border: 4px solid #A17A4D;
+      padding: 20px 190px; /* igual ao voltar */
+      border: 4px solid #B58B4C;
       border-radius: 50px;
       font-weight: 700;
       font-family: 'Playfair Display', sans-serif;
       font-size: 1.9em; /* igual ao voltar */
-      color: #A17A4D;
+      color: #705537;
       background: #E0C1A2;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -155,9 +156,11 @@
     }
 
     .send-button:hover {
-      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
-      color: #4A4A4A;
-      transform: scale(1.03);
+      background: #705537;
+      border-color: #F4EAD5;
+      color: #FFF8F0;
+      transform: scale(1.02);
+      box-shadow: 0 5px 18px rgba(212, 175, 55, 0.3);
     }
 
     .back-link {
@@ -170,13 +173,13 @@
 
     .back-link a {
       display: inline-block;
-      padding: 20px 250px;
-      border: 4px solid #A17A4D;
+      padding: 20px 190px;
+      border: 4px solid #B58B4C;
       border-radius: 50px;
       font-weight: 600;
       font-family: 'Playfair Display', sans-serif;
       font-size: 1.9em;
-      color: #A17A4D;
+      color: #705537;
       text-decoration: none;
       background: #e4cbb3;
       transition: all 0.3s ease;
@@ -184,8 +187,8 @@
     }
 
     .back-link a:hover {
-      background: linear-gradient(145deg, #D4AF37, #F4C2C2);
-      border-color: #4A4A4A;
+      background: #705537;
+      border-color: #F4EAD5;
       color: #FFF8F0;
       transform: scale(1.02);
       box-shadow: 0 5px 18px rgba(212, 175, 55, 0.3);
@@ -193,13 +196,21 @@
   </style>
 </head>
 <body>
+
+  
   <div class="card">
+    
+
     <h1>Lista de Presentes</h1>
     <h2>Jessica & Wagner</h2>
 
-    <a class="main-link" href="#" target="_blank">Abrir lista de presentes</a>
+    
     <div class="image-wrapper">
       <img class="gift-image" src="listadepresente2.png" alt="Lista de presentes" />
+    </div>
+
+     <div>
+      <a class="main-link" href="/local" target="_blank">Abrir lista de presentes</a>
     </div>
 
     <div class="message-wrapper">
