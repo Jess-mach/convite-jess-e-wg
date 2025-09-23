@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: 'Playfair Display', sans-serif;
-      background: linear-gradient(135deg, #F5E6D3 0%, #F4C2C2 100%);
+      background: linear-gradient(to bottom, #F7EBEA, #E0C1A2);
       padding: 16px;
       display: flex;
       justify-content: center;
@@ -16,16 +16,16 @@
     }
 
     .card {
-      background: linear-gradient(145deg, #FFF8F0 0%, #F5E6D3 50%, #F4C2C2 100%);
+      background: linear-gradient(to bottom, #F7EBEA, #E0C1A2 80%, #F7EBEA);
       border-radius: 25px;
       width: 980px;
       height: 1940px;
       padding: 50px 30px;
       text-align: center;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15), 0 0 0 2px #D4AF37, 0 0 0 4px #F4C2C2;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15), 0 0 0 2px #A17A4D, 0 0 0 4px #F4C2C2;
       position: relative;
       overflow: hidden;
-      border: 3px solid #D4AF37;
+      border: 3px solid #A17A4D;
     }
     
     .card::after {
@@ -35,7 +35,7 @@
       left: 8px;
       right: 8px;
       bottom: 8px;
-      border: 1px solid #D4AF37;
+      border: 1px solid #A17A4D;
       border-radius: 20px;
       pointer-events: none;
     }
@@ -56,7 +56,7 @@
       font-family: 'Dancing Script', serif;
       font-size: 7em;
       margin: 0 0 10px 0;
-      color: #D4AF37;
+      color: #B58B4C;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
@@ -66,7 +66,7 @@
       font-size: 2em;
       margin: 10px ;
       font-weight: 300;
-      color: #D4AF37;
+      color: #A17A4D;
       text-shadow: 1px 1px 2px rgba(74, 74, 74, 0.3);
       position: relative;
       z-index: 1;
@@ -76,7 +76,7 @@
       font-size: 9em;
       margin: 10px 0;
       font-weight: 500;
-      color: #4A4A4A;
+      color: #A17A4D;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
@@ -86,7 +86,7 @@
       font-size: 3em;
       font-weight: normal;
       margin: 80px 0 10px 0;
-      color: #D4AF37;
+      color: #A17A4D;
       text-shadow: 1px 1px 2px rgba(74, 74, 74, 0.2);
       position: relative;
       z-index: 1;
@@ -97,69 +97,69 @@
       font-size: 1.8em;
       font-weight: 600;
       margin: 10px 0;
-      color: #4A4A4A;
+      color: #A17A4D;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
     }
     
     .date-time a {
-      color: #D4AF37;
+      color: #A17A4D;
       text-decoration: none;
       font-weight: 600;
     }
     
     .date-time a:hover {
-      color: #B8860B;
+      color: #A17A4D;
       text-decoration: underline;
     }
     .note-line {
-      font-weight: 400;
-      color: #D4AF37;
+      font-weight: 600;
+      color: #A17A4D;
       margin-bottom: 20px;
     }
     .details {
       margin: 0px 0 20px 0;
       line-height: 1.8;
-      color: #4A4A4A;
+      color: #A17A4D;
       font-size: 2em;
       position: relative;
       z-index: 1;
     }
     .details a {
-      color: #D4AF37;
+      color: #A17A4D;
       font-weight: 600;
       text-decoration: none;
-      border-bottom: 1px solid #D4AF37;
+      border-bottom: 1px solid #A17A4D;
     }
     .details a:hover {
       text-decoration: none;
-      color: #B8E6B8;
-      border-bottom-color: #B8E6B8;
+      color: #A17A4D;
+      border-bottom-color: #A17A4D;
     }
     .stamp {
       margin-top: 50px;
       margin-bottom: 5px;
       display: inline-block;
       padding: 20px 150px;
-      border: 2px solid #D4AF37;
+      border: 6px solid #A17A4D;
       border-radius: 50px;
       font-weight: 900;
       font-family: 'Playfair Display', sans-serif;
-      font-size: 1.8em;
+      font-size: 1.9em;
       transform: rotate(-0,5deg);
-      color: #D4AF37;
+      color: #A17A4D;
       text-decoration: none;
-      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
+      background: #E0C1A2;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
     }
     .stamp:hover {
-      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
-      border-color: #D4AF37;
-      color: #4A4A4A;
+      background: #E0C1A2;
+      border-color: #A17A4D;
+      color: #A17A4D;
       transform: rotate(-0,5deg) scale(1.05);
       box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4);
     }
@@ -177,15 +177,15 @@
       margin-top: 15px;
       display: inline-block;
       padding: 20px 150px;
-      border: 2px solid #D4AF37;
+      border: 6px solid #A17A4D;
       border-radius: 50px;
       font-weight: 900;
       font-family: 'Playfair Display', sans-serif;
-      font-size: 1.8em;
+      font-size: 1.9em;
       transform: rotate(-0,5deg);
-      color: #D4AF37;
+      color: #A17A4D;
       text-decoration: none;
-      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
+      background: #E0C1A2;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
       position: relative;
@@ -193,9 +193,9 @@
     }
     
     .gift-list-link:hover {
-      background: linear-gradient(145deg, #f5d3d3, #F5E6D3);
-      border-color: #D4AF37;
-      color: #4A4A4A;
+      background: #E0C1A2;
+      border-color: #A17A4D;
+      color: #A17A4D;
       transform: rotate(-0,5deg) scale(1.05);
       box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4);
     }
@@ -229,7 +229,7 @@
       font-size: 2.2em;
       font-weight: 400;
       margin: 30px 0;
-      color: #4A4A4A;
+      color: #A17A4D;
       text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
       position: relative;
       z-index: 1;
