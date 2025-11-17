@@ -1,0 +1,320 @@
+body {
+  font-family: 'Playfair Display', sans-serif;
+  background: linear-gradient(to bottom, #F7EBEA, #E0C1A2);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: linear-gradient(to bottom, #F7EBEA, #E0C1A2 80%, #F7EBEA);
+  border-radius: 25px;
+  width: 100%;
+  max-width: 980px;
+  padding: 50px 30px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15), 0 0 0 2px #A17A4D, 0 0 0 4px #F4C2C2;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #B58B4C;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid #B58B4C;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="%23D4AF37" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>');
+  pointer-events: none;
+}
+
+h1 {
+  font-family: 'Dancing Script', serif;
+  font-size: clamp(3em, 10vw, 7em);
+  margin: 0 0 10px 0;
+  color: #A17A4D;
+  text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5em, 3vw, 2em);
+  margin: 10px 0;
+  font-weight: 300;
+  color: #B58B4C;
+  text-shadow: 1px 1px 2px rgba(74, 74, 74, 0.3);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+h3 {
+  font-family: 'Italianno', serif;
+  font-size: clamp(4em, 12vw, 9em);
+  margin: 20px 0;
+  font-weight: 500;
+  color: #A17A4D;
+  text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.highlight {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8em, 4vw, 3em);
+  font-weight: normal;
+  margin: 30px 0 10px 0;
+  color: #705537;
+  text-shadow: 1px 1px 2px rgba(74, 74, 74, 0.2);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.date-time {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: clamp(1.2em, 2.5vw, 1.8em);
+  font-weight: 600;
+  margin: 10px 0;
+  color: #705537;
+  text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.date-time a {
+  color: #705537;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.date-time a:hover {
+  color: #705537;
+  text-decoration: underline;
+}
+
+.note-line {
+  font-weight: 600;
+  color: #705537;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin: 20px 0;
+  line-height: 1.8;
+  color: #705537;
+  font-size: clamp(1.3em, 3vw, 2em);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.details a {
+  color: #705537;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #B58B4C;
+}
+
+.details a:hover {
+  text-decoration: none;
+  color: #705537;
+  border-bottom-color: #B58B4C;
+}
+
+.stamp {
+  margin: 30px auto 15px auto;
+  display: inline-block;
+  padding: clamp(16px, 3vw, 20px) clamp(40px, 15vw, 150px);
+  border: 4px solid #B58B4C;
+  border-radius: 50px;
+  font-weight: 900;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: clamp(1.2em, 3vw, 1.9em);
+  transform: rotate(-0.5deg);
+  color: #705537;
+  text-decoration: none;
+  background: #E0C1A2;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.stamp:hover {
+  background: #E0C1A2;
+  border-color: #B58B4C;
+  color: #705537;
+  transform: rotate(-0.5deg) scale(1.05);
+  box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4);
+}
+
+.stamp:focus {
+  outline: none;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.stamp:active {
+  transform: rotate(-2deg) scale(0.98);
+}
+
+.gift-list-link {
+  margin: 15px auto;
+  display: inline-block;
+  padding: clamp(16px, 3vw, 20px) clamp(40px, 15vw, 150px);
+  border: 4px solid #B58B4C;
+  border-radius: 50px;
+  font-weight: 900;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: clamp(1.2em, 3vw, 1.9em);
+  transform: rotate(-0.5deg);
+  color: #705537;
+  text-decoration: none;
+  background: #E0C1A2;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.gift-list-link:hover {
+  background: #E0C1A2;
+  border-color: #B58B4C;
+  color: #705537;
+  transform: rotate(-0.5deg) scale(1.05);
+  box-shadow: 0 6px 20px rgba(244, 194, 194, 0.4);
+}
+
+.gift-list-link:focus {
+  outline: none;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.gift-list-link:active {
+  transform: rotate(-0.5deg) scale(0.98);
+}
+
+.couple-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 800 / 750;
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  margin: 30px auto;
+  display: block;
+  background: transparent;
+}
+
+.invitation-message {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4em, 3.5vw, 2.2em);
+  font-weight: 400;
+  margin: 30px 0;
+  color: #705537;
+  text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 1;
+  line-height: 1.4;
+  width: 100%;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    margin: 0 0 8px 0;
+  }
+
+  h2 {
+    margin: 8px 0;
+  }
+
+  h3 {
+    margin: 15px 0;
+  }
+
+  .highlight {
+    margin: 20px 0 8px 0;
+  }
+
+  .date-time {
+    margin: 8px 0;
+  }
+
+  .invitation-message {
+    margin: 20px 0;
+  }
+
+  .stamp {
+    margin: 20px auto 10px auto;
+  }
+
+  .gift-list-link {
+    margin: 10px auto;
+  }
+
+  .details {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .couple-image {
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+
+  .invitation-message {
+    font-size: 1.2em;
+    line-height: 1.3;
+  }
+}
+

@@ -36,6 +36,42 @@ Aqui você pode adicionar as imagens de prévia do convite para facilitar a visu
 
 ## Changelog
 
+### [2025] - Página Principal (index.html)
+
+#### Adicionado
+- Arquivo `index.css`: Arquivo CSS separado para melhor organização do código
+- Meta tag viewport para responsividade em dispositivos móveis
+- Layout responsivo com media queries para tablets (768px) e mobile (480px)
+- Uso de `clamp()` para tamanhos de fonte e padding responsivos em todos os elementos
+
+#### Modificado
+- Separação do CSS inline para arquivo externo (`index.css`)
+- Estrutura do card reorganizada para layout sequencial e fluido usando `flex-direction: column`
+- Removida altura fixa do card (`height: 1940px`) para permitir crescimento dinâmico baseado no conteúdo
+- Card principal agora com `max-width: 980px` e `width: 100%` para adaptação responsiva
+- Imagem do casal (`couple-image`) ajustada para ser responsiva:
+  - `max-width: 800px` com `width: 100%`
+  - Uso de `aspect-ratio` para manter proporções
+  - Altura automática baseada na largura
+- Títulos (h1, h2, h3) com tamanhos de fonte responsivos usando `clamp()`
+- Botões (`.stamp` e `.gift-list-link`) ajustados para serem responsivos:
+  - Padding adaptativo usando `clamp()`
+  - Largura máxima de 600px
+  - Tamanhos de fonte responsivos
+- Elementos de texto (`.highlight`, `.date-time`, `.details`, `.invitation-message`) com tamanhos responsivos
+- Espaçamentos ajustados para melhor visualização em diferentes tamanhos de tela
+
+#### Melhorias de UX/UI
+- Layout sequencial: cada elemento aparece após o anterior de forma natural
+- Todos os elementos centralizados e alinhados
+- Botões com tamanhos apropriados para diferentes tamanhos de tela
+- Melhor legibilidade em dispositivos móveis
+- Imagem do casal mantém proporções em todas as resoluções
+
+#### Arquivos Afetados
+- `index.html`
+- `index.css` (novo)
+
 ### [2025] - Lista de Presentes - Link
 
 #### Adicionado
