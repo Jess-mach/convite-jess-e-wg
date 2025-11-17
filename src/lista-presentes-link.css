@@ -90,11 +90,7 @@ h2 {
   color: #705537;
   margin: 0 0 15px 0;
   line-height: 1.6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .mercado-livre-icon {
@@ -102,7 +98,11 @@ h2 {
   height: 28px;
   display: inline-block;
   vertical-align: middle;
-  flex-shrink: 0;
+  margin: 0 4px;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 .link-wrapper {
