@@ -34,6 +34,43 @@ Aqui você pode adicionar as imagens de prévia do convite para facilitar a visu
 - HTML5
 - CSS3
 
+## Changelog
+
+### [2025] - Lista de Presentes - Link
+
+#### Adicionado
+- Arquivo `src/lista-presentes-link.html`: Nova página para lista de presentes com link direto para o Mercado Livre
+- Arquivo `src/lista-presentes-link.css`: Arquivo CSS separado para melhor organização do código
+- Ícone do Mercado Livre (`meli.png`) na mensagem informativa
+- Meta tag viewport para responsividade em dispositivos móveis
+- Layout responsivo com media queries para tablets (768px) e mobile (480px)
+- Uso de `clamp()` para tamanhos de fonte e padding responsivos
+
+#### Modificado
+- Separação do CSS inline para arquivo externo (`lista-presentes-link.css`)
+- Estrutura HTML reorganizada para layout sequencial e fluido
+- Removidas sobreposições de elementos (margin negativo)
+- Centralização de todos os elementos com alinhamento consistente
+- Botões e links ajustados para serem responsivos:
+  - Padding adaptativo usando `clamp()`
+  - Largura máxima de 600px
+  - Tamanhos de fonte responsivos
+- Espaçamentos entre elementos padronizados (30px entre seções)
+- Card principal agora usa `flex-direction: column` para layout vertical natural
+- Removida altura fixa do card para permitir crescimento dinâmico baseado no conteúdo
+
+#### Melhorias de UX/UI
+- Layout sequencial: cada elemento aparece após o anterior sem sobreposições
+- Todos os elementos centralizados e alinhados
+- Botões com tamanhos apropriados para diferentes tamanhos de tela
+- Texto informativo com ícone do Mercado Livre integrado
+- Melhor legibilidade em dispositivos móveis
+
+#### Arquivos Afetados
+- `src/lista-presentes-link.html`
+- `src/lista-presentes-link.css` (novo)
+- `meli.png` (utilizado como ícone)
+
 ## Contato
 
 Para qualquer dúvida ou sugestão, por favor, entre em contato.
